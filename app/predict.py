@@ -6,11 +6,12 @@ from pydantic import BaseModel, confloat, conint
 router = APIRouter()
 
 class AirBnb_rentals(BaseModel):
+    bedrooms: conint(gt=0, lt=10)
     num_baths: confloat(ge=0, le=10)
     number_of_reviews: int
-    neighborhood: str
-    bedrooms: conint(gt=0, lt=10)
     minimum_nights_avg_ntm: int
+    neighborhood: str
+    
 
 
 @router.post('/predict_rent')
