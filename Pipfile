@@ -7,6 +7,14 @@ name = "pypi"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
+joblib = "*"
+requests = "*"
+scikit-learn = "*"
+psycopg2 = "*"
+pandas = "*"
+numpy = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
