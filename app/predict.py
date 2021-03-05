@@ -5,6 +5,7 @@ from pydantic import BaseModel, confloat, conint
 
 router = APIRouter()
 
+# Data types and solve some problem which you will see it at normal time
 class AirBnb_rentals(BaseModel):
     bedrooms: conint(gt=1, le=11)
     num_baths: confloat(ge=0, le=10)

@@ -1,1 +1,1 @@
-web:gunicorn buildweek:APP -t 300
+web:gunicorn "app:create_app()"
