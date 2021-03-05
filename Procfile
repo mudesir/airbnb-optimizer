@@ -1,1 +1,1 @@
-web:gunicorn app:APP -t 300
+web:gunicorn buildweek:APP -t 300
